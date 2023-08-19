@@ -21,12 +21,12 @@ else
 echo "The installation of postfix is success"
 fi 
 
-yum install mysql -y
+yum install git -y
 
 if [ $? -ne 0 ]
 then
-echo "The installation of mysql is having error"
+echo "The installation of git is having error"
 exit 1
 else
-echo "The installation of mysql is success"
+echo "The installation of git is success"
 fi 
