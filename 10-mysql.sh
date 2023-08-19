@@ -15,8 +15,8 @@ yum install postfix -y
 
 if [ $? -ne 0 ]
 then
-echo "The installation of mysql is having error"
+echo "The installation of postfix is having error"
 exit 1
 else
-echo "The installation of my sql is success"
+echo "The installation of postfix is success"
 fi 
