@@ -11,7 +11,7 @@ exit 1
 # echo "you are the root user"
 fi 
 
-yum install mysql -y
+yum install postfix -y
 
 if [ $? -ne 0 ]
 then
