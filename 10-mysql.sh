@@ -11,7 +11,7 @@ exit 1
 # echo "you are the root user"
 fi 
 
-yum install git -y
+yum install mysql -y
 
 if [ $? -ne 0 ]
 then
