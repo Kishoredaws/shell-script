@@ -8,10 +8,10 @@ VALIDATE() {
 
 if [ $1 -ne 0 ]
 then
-echo "The Installation of git is failure"
+echo "$2 is failure"
 exit 1
 else
-echo "The Installation of git is success"
+echo "$2 is success"
 fi 
 }
 
@@ -24,7 +24,7 @@ exit 1
 fi 
 
 yum install postfix -y
-VALIDATE $? 
+VALIDATE $? "The installation of postfix"
 yum install git -y
-VALIDATE $?
+VALIDATE $? "The installation of git"
 
